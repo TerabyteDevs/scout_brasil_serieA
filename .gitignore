@@ -7,6 +7,4 @@ __pycache__/
 *.pyc
 
 # Arquivos gerados
-*.csv
-*.json
 *.log
