@@ -1,3 +1,4 @@
+
 import scrapy
 
 class FbrefSpider(scrapy.Spider):
@@ -83,4 +84,5 @@ class FbrefSpider(scrapy.Spider):
                     cell_value = cell.css('a::text').get() or cell.css('::text').get()
                     player_data[header_key] = cell_value.strip() if cell_value else None
             
+
             yield player_data

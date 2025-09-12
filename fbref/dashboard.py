@@ -1,4 +1,5 @@
-# dashboard.py
+
+
 import streamlit as st
 import pandas as pd
 from datetime import datetime
@@ -84,4 +85,5 @@ st.markdown(f"**{len(df_filtered)} jogadores encontrados**")
 
 # Remove colunas técnicas antes de exibir
 columns_to_show = [col for col in df_filtered.columns if col not in ['birth_date_dt', 'age_standardized']]
+
 st.dataframe(df_filtered[columns_to_show])

@@ -1,3 +1,4 @@
+
 # fbref/pipelines.py
 import pandas as pd
 import re
@@ -111,4 +112,5 @@ class ExcelExportPipeline:
         # --- ETAPA 8: SALVAR O ARQUIVO FINAL ---
         output_filename = "fbref_player_stats_final.xlsx"
         final_df.to_excel(output_filename, index=False)
+        
         spider.logger.info(f"Arquivo Excel final e organizado '{output_filename}' salvo com sucesso.")
