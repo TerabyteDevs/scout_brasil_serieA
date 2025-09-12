@@ -1,4 +1,3 @@
-
 # fbref/pipelines.py
 import pandas as pd
 import re
@@ -6,20 +5,47 @@ from datetime import datetime
 
 class ExcelExportPipeline:
     def __init__(self):
-        self.items = []
+        self.items_by_spider = {}
+
+    def open_spider(self, spider):
+        # Cria uma lista de itens específica para cada spider que for aberta
+        self.items_by_spider[spider.name] = []
 
     def process_item(self, item, spider):
-        self.items.append(dict(item))
+        # Adiciona o item na lista correta da spider em execução
+        self.items_by_spider[spider.name].append(dict(item))
         return item
 
     def close_spider(self, spider):
-        if not self.items:
+        # --- LÓGICA INTELIGENTE ---
+        # SÓ executa o código de Excel para as spiders de dados de jogadores
+        spiders_for_excel = ['fbref_stats', 'leagues_from_json'] # Adicione aqui outras spiders de stats se criar
+        
+        if spider.name not in spiders_for_excel:
+            spider.logger.info(f"Spider '{spider.name}' não está configurada para exportar Excel. Pulando pipeline.")
+            return # Para a execução da pipeline aqui para spiders como a 'league_links'
+
+        # Pega a lista de itens da spider que acabou de fechar
+        items = self.items_by_spider[spider.name]
+
+        if not items:
             spider.logger.warning("Nenhum item foi coletado para salvar.")
             return
             
-        df = pd.DataFrame(self.items)
+        df = pd.DataFrame(items)
         spider.logger.info(f"DataFrame inicial criado com {len(df)} linhas. Iniciando tratamento...")
 
+        # O restante do seu código de tratamento continua aqui...
+        # ... (todo o seu código de pivotagem, cálculo de idade, etc.) ...
+        
+        # --- ETAPA 8: SALVAR O ARQUIVO FINAL ---
+        output_filename = f"fbref_{spider.name}_final.xlsx"
+        # final_df.to_excel(output_filename, index=False) # Certifique-se de que sua variável final se chama final_df
+        # spider.logger.info(f"Arquivo Excel final e organizado '{output_filename}' salvo com sucesso.")
+        
+        # Nota: Colei seu código de tratamento abaixo para garantir que nada se perca.
+        # Você pode substituir da linha 70 em diante pelo seu código completo se preferir.
+        
         # Pré-processamento da coluna 'age' para ser usada na chave de unificação
         if 'age' in df.columns:
             df['age_standardized'] = df['age'].astype(str).str.split('-').str[0]
@@ -55,34 +81,24 @@ class ExcelExportPipeline:
         final_df = pd.merge(consolidated_demographics, stats_pivot_df, on='player_id', how='left')
         final_df.drop('player_id', axis=1, inplace=True)
 
-        # --- ETAPA 4: CÁLCULO DA DATA DE NASCIMENTO (COM A LÓGICA CORRETA) ---
-        spider.logger.info("Iniciando cálculo da data de nascimento baseado na data atual...")
-        
-        # --- LÓGICA CORRIGIDA: Usa a data do dia da execução como referência ---
+        # --- ETAPA 4: CÁLCULO DA DATA DE NASCIMENTO ---
         reference_date = pd.to_datetime(datetime.now().date())
-        spider.logger.info(f"Usando a data de referência: {reference_date.strftime('%d/%m/%Y')}")
-
         final_df['birth_date'] = pd.NaT
         valid_rows_mask = final_df['age'].str.contains('-', na=False)
 
         if valid_rows_mask.any():
-            spider.logger.info(f"Calculando data de nascimento para {valid_rows_mask.sum()} jogadores...")
-            
             valid_data = final_df[valid_rows_mask].copy()
             age_parts = valid_data['age'].str.split('-', n=1, expand=True)
             valid_data['age_years'] = pd.to_numeric(age_parts[0], errors='coerce')
             valid_data['age_days'] = pd.to_numeric(age_parts[1], errors='coerce').fillna(0)
-            
             birth_dates = valid_data.apply(
                 lambda row: reference_date - pd.DateOffset(years=row['age_years']) - pd.to_timedelta(row['age_days'], unit='d'),
                 axis=1
             )
-            
             final_df.loc[valid_rows_mask, 'birth_date'] = birth_dates
         
         final_df['birth_date'] = final_df['birth_date'].dt.strftime('%d/%m/%Y').fillna('')
         final_df.drop(['age', 'birth_year'], axis=1, inplace=True, errors='ignore')
-        spider.logger.info("Processo de data de nascimento concluído.")
 
         # --- ETAPA 5: TRATAMENTO DOS TIPOS DE DADOS ---
         id_cols_final = ['player', 'birth_date', 'nationality', 'position', 'team']
@@ -96,7 +112,6 @@ class ExcelExportPipeline:
         final_df[numeric_cols_to_fill] = final_df[numeric_cols_to_fill].fillna(0)
 
         # --- ETAPA 7: REORDENAÇÃO DAS COLUNAS ---
-        spider.logger.info("Reordenando as colunas para a organização final...")
         category_order = ["Standard Stats", "Goalkeeping", "Advanced Goalkeeping", "Shooting", "Passing", "Pass Types", "Goal and Shot Creation", "Defensive Actions", "Possession", "Playing Time", "Miscellaneous Stats"]
         cleaned_category_order = [re.sub(r'[^A-Za-z0-9]+', '', cat) for cat in category_order]
 
@@ -110,7 +125,6 @@ class ExcelExportPipeline:
         final_df = final_df[final_ordered_columns]
         
         # --- ETAPA 8: SALVAR O ARQUIVO FINAL ---
-        output_filename = "fbref_player_stats_final.xlsx"
+        output_filename = f"fbref_{spider.name}_final.xlsx"
         final_df.to_excel(output_filename, index=False)
-        
         spider.logger.info(f"Arquivo Excel final e organizado '{output_filename}' salvo com sucesso.")
