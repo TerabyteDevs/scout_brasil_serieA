@@ -1,4 +1,3 @@
-
 # Scrapy settings for fbref project
 #
 # For simplicity, this file contains only settings considered important or
@@ -95,4 +94,3 @@ DOWNLOAD_HANDLERS = {
 
 # Configuração para o Twisted (necessário para o Playwright)
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
-

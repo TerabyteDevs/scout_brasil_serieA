@@ -1,4 +1,3 @@
-
 # Define here the models for your spider middleware
 #
 # See documentation in:
@@ -99,4 +98,3 @@ class FbrefDownloaderMiddleware:
 
     def spider_opened(self, spider):
         spider.logger.info("Spider opened: %s" % spider.name)
-
