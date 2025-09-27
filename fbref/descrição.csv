@@ -1,0 +1,195 @@
+﻿player;Player;Nome do jogador
+birth_date;;Data de Nascimento
+nationality;Nation;Data de Nascimento
+position;Pos;Position most commonly played by the player
+team;Squad;Clube atual do jogador
+Advanced_Goalkeeping_gk_avg_distance_def_actions;Sweeper_AvgDist;Average distance from goal (in yards) of all defensive actions
+Advanced_Goalkeeping_gk_corner_kick_goals_against;Goals_CK;Corner Kick Goals Against
+Advanced_Goalkeeping_gk_crosses;Crosses_Opp;Opponent's attempted crosses into penalty area
+Advanced_Goalkeeping_gk_crosses_stopped;Crosses_Stp;Number of crosses into penalty area which were successfully stopped by the goalkeeper
+Advanced_Goalkeeping_gk_crosses_stopped_pct;Crosses_Stp%;Percentage of crosses into penalty area which were successfully stopped by the goalkeeper
+Advanced_Goalkeeping_gk_def_actions_outside_pen_area;Sweeper_#OPA;# of defensive actions outside of penalty area
+Advanced_Goalkeeping_gk_def_actions_outside_pen_area_per90;Sweeper_#OPA/90;Defensive actions outside of penalty area per 90 minutes
+Advanced_Goalkeeping_gk_free_kick_goals_against;Goals_FK;Free Kick Goals Against
+Advanced_Goalkeeping_gk_goal_kick_length_avg;Goal Kicks_AvgLen;Average length of goal kicks, in yards
+Advanced_Goalkeeping_gk_goal_kicks;Goal Kicks_Att;Goal Kicks Attempted
+Advanced_Goalkeeping_gk_goals_against;Goals_GA;Goals Against
+Advanced_Goalkeeping_gk_own_goals_against;Goals_OG;Own Goals Scored Against Goalkeeper
+Advanced_Goalkeeping_gk_passes;Passes_Att (GK);Passes Attempted (GK). Not including goal kicks
+Advanced_Goalkeeping_gk_passes_completed_launched;Launched_Cmp;Passes completed longer than 40 yards
+Advanced_Goalkeeping_gk_passes_launched;Launched_Att;Passes lattempted longer than 40 yards
+Advanced_Goalkeeping_gk_passes_length_avg;Passes_AvgLen;Average length of passes, in yards. Not including goal kicks
+Advanced_Goalkeeping_gk_passes_pct_launched;Launched_Cmp%;Pass Completion Percentage longer than 40 yards
+Advanced_Goalkeeping_gk_passes_throws;Passes_Thr;Throws Attempted
+Advanced_Goalkeeping_gk_pct_goal_kicks_launched;Goal Kicks_Launch%;Percentage of Goal Kicks that were Launched. Passes longer than 40 yards
+Advanced_Goalkeeping_gk_pct_passes_launched;Passes_Launch%;Percentage of Passes longer than 40 yards that were Launched. Not including goal kicks
+Advanced_Goalkeeping_gk_pens_allowed;Goals_PKA;Penalty Kicks Allowed
+Advanced_Goalkeeping_gk_psnpxg_per_shot_on_target_against;Expected_PSxG/SoT;Post-Shot Expected Goals per Shot on Target. Not including penalty kicks. Higher numbers indicate that shots on target faced are more difficult to stop and more likely to score
+Advanced_Goalkeeping_gk_psxg;Expected_PSxG;Post-Shot Expected Goals. PSxG is expected goals based on how likely the goalkeeper is to save the shot. xG totals include penalty kicks, but do not include penalty shootouts (unless otherwise noted).
+Advanced_Goalkeeping_gk_psxg_net;Expected_PSxG+/-;Post-Shot Expected Goals minus Goals Allowed. Positive numbers suggest better luck or an above average ability to stop shots. PSxG is expected goals based on how likely the goalkeeper is to save the shot. Does not include own goals.
+Advanced_Goalkeeping_gk_psxg_net_per90;Expected_/90;Post-Shot Expected Goals minus Goals Allowed per 90 minutes. Does not include own goals
+Defensive_Actions_blocked_passes;Blocks_Pass;Number of times blocking a pass by standing in its path
+Defensive_Actions_blocked_shots;Blocks_Sh;Number of times blocking a shot by standing in its path
+Defensive_Actions_blocks;Blocks_Blocks;Number of times blocking the ball by standing in its path
+Defensive_Actions_challenge_tackles;Challenges_Tkl;Number of dribblers tackled
+Defensive_Actions_challenge_tackles_pct;Challenges_Tkl%;Percentage of dribblers tackled. Minimum .625 dribblers challenged per squad game to qualify as a leader
+Defensive_Actions_challenges;Challenges_Att;Number of unsuccessful challenges plus number of dribblers tackled
+Defensive_Actions_challenges_lost;Challenges_Lost;Number of unsuccessful attempts to challenge a dribbling player
+Defensive_Actions_clearances;Clr;Clearances
+Defensive_Actions_errors;Err;Mistakes leading to an opponent's shot
+Defensive_Actions_interceptions;Int;Interceptions
+Defensive_Actions_tackles;Tackles_Tkl;Number of players tackled
+Defensive_Actions_tackles_att_3rd;Tackles_Att 3rd;Tackles in attacking 1/3
+Defensive_Actions_tackles_def_3rd;Tackles_Def 3rd;Tackles in defensive 1/3
+Defensive_Actions_tackles_interceptions;Tkl+Int;Number of players tackled plus number of interceptions
+Defensive_Actions_tackles_mid_3rd;Tackles_Mid 3rd;Tackles in middle 1/3
+Defensive_Actions_tackles_won;Tackles_TklW;Tackles in which the tackler's team won possession of the ball
+Goal_and_Shot_Creation_gca;GCA_GCA;Goal-Creating Actions. The two offensive actions directly leading to a goal, such as passes, take-ons and drawing fouls. A single player can receive credit for multiple actions and the shot-taker can also receive credit.
+Goal_and_Shot_Creation_gca_defense;GCA Types_Def;Defensive actions that lead to a goal
+Goal_and_Shot_Creation_gca_fouled;GCA Types_Fld;Fouls drawn that lead to a goal
+Goal_and_Shot_Creation_gca_passes_dead;GCA Types_PassDead;Completed dead-ball passes that lead to a goal. Includes free kicks, corner kicks, kick offs, throw-ins and goal kicks
+Goal_and_Shot_Creation_gca_passes_live;GCA Types_PassLive;Completed live-ball passes that lead to a goal
+Goal_and_Shot_Creation_gca_per90;GCA_GCA90;Goal-Creating Actions per 90 minutes. Minimum 30 minutes played per squad game to qualify as a leader
+Goal_and_Shot_Creation_gca_shots;GCA Types_Sh;Shots that lead to another goal-scoring shot
+Goal_and_Shot_Creation_gca_take_ons;GCA Types_TO;Successful take-ons that lead to a goal
+Goal_and_Shot_Creation_sca;SCA_SCA;Shot-Creating Actions. The two offensive actions directly leading to a shot, such as passes, take-ons and drawing fouls. A single player can receive credit for multiple actions and the shot-taker can also receive credit.
+Goal_and_Shot_Creation_sca_defense;SCA Types_Def;Defensive actions that lead to a shot attempt
+Goal_and_Shot_Creation_sca_fouled;SCA Types_Fld;Fouls drawn that lead to a shot attempt
+Goal_and_Shot_Creation_sca_passes_dead;SCA Types_PassDead;Completed dead-ball passes that lead to a shot attempt. Includes free kicks, corner kicks, kick offs, throw-ins and goal kicks
+Goal_and_Shot_Creation_sca_passes_live;SCA Types_PassLive;Completed live-ball passes that lead to a shot attempt
+Goal_and_Shot_Creation_sca_per90;SCA_SCA90;Shot-Creating Actions per 90 minutes. Minimum 30 minutes played per squad game to qualify as a leader
+Goal_and_Shot_Creation_sca_shots;SCA Types_Sh;Shots that lead to another shot attempt
+Goal_and_Shot_Creation_sca_take_ons;SCA Types_TO;Successful take-ons that lead to a shot attempt
+Goalkeeping_gk_clean_sheets;Performance_CS;Clean Sheets. Full matches by goalkeeper where no goals are allowed.
+Goalkeeping_gk_clean_sheets_pct;Performance_CS%;Clean Sheet Percentage
+Goalkeeping_gk_games;Playing Time_MP;Matches Played by the player or squad
+Goalkeeping_gk_games_starts;Playing Time_Starts;Game or games started by player
+Goalkeeping_gk_goals_against;Performance_GA;Goals Against
+Goalkeeping_gk_goals_against_per90;Performance_GA90;Goals Against per 90 minutes
+Goalkeeping_gk_losses;Performance_L;Losses
+Goalkeeping_gk_minutes;Playing Time_Min;Minutes
+Goalkeeping_gk_pens_allowed;Penalty Kicks_PKA;Penalty Kicks Allowed
+Goalkeeping_gk_pens_att;Penalty Kicks_PKatt;Penalty Kicks Attempted
+Goalkeeping_gk_pens_missed;Penalty Kicks_PKm;Penalty Kicks Missed
+Goalkeeping_gk_pens_save_pct;Penalty Kicks_Save%;Penalty Save Percentage. Penalty shots that miss the target are not included
+Goalkeeping_gk_pens_saved;Penalty Kicks_PKsv;Penalty Kicks Saved
+Goalkeeping_gk_save_pct;Performance_Save%;Save Percentage. Note that not all shots on target are stopped by the keeper, many will be stopped by defenders. Does not include penalty kicks
+Goalkeeping_gk_saves;Performance_Saves;Saves
+Goalkeeping_gk_shots_on_target_against;Performance_SoTA;Shots on Target Against
+Goalkeeping_gk_ties;Performance_D;Draws
+Goalkeeping_gk_wins;Performance_W;Wins
+Miscellaneous_Stats_aerials_lost;Aeriel Duels_Lost;Aerials Lost
+Miscellaneous_Stats_aerials_won;Aeriel Duels_Won;Aerials Won
+Miscellaneous_Stats_aerials_won_pct;Aeriel Duels_Won%;Percentage of aerials won. Minimum .97 aerial duels per squad game to qualify as a leader
+Miscellaneous_Stats_ball_recoveries;Performance_Recov;Number of loose balls recovered
+Miscellaneous_Stats_cards_red;Performance_CrdR;Red Cards
+Miscellaneous_Stats_cards_yellow;Performance_CrdY;Yellow Cards
+Miscellaneous_Stats_cards_yellow_red;Performance_2CrdY;Second Yellow Card
+Miscellaneous_Stats_crosses;Performance_Crs;Crosses
+Miscellaneous_Stats_fouled;Performance_Fld;Fouls Drawn
+Miscellaneous_Stats_fouls;Performance_Fls;Fouls Committed
+Miscellaneous_Stats_interceptions;Performance_Int;Interceptions
+Miscellaneous_Stats_offsides;Performance_Off;Offsides
+Miscellaneous_Stats_own_goals;Performance_OG;Own Goals
+Miscellaneous_Stats_pens_conceded;Performance_PKcon;Penalty Kicks Conceded
+Miscellaneous_Stats_pens_won;Performance_PKwon;Penalty Kicks Won
+Miscellaneous_Stats_tackles_won;Performance_TklW;Tackles in which the tackler's team won possession of the ball
+Pass_Types_corner_kicks;Pass Types_CK;Corner Kicks
+Pass_Types_corner_kicks_in;Corner Kicks_In;Inswinging Corner Kicks
+Pass_Types_corner_kicks_out;Corner Kicks_Out;Outswinging Corner Kicks
+Pass_Types_corner_kicks_straight;Corner Kicks_Str;Straight Corner Kicks
+Pass_Types_crosses;Pass Types_Crs;Crosses
+Pass_Types_passes;Att;Passes Attempted. Includes live ball passes (including crosses) as well as corner kicks, throw-ins, free kicks and goal kicks.
+Pass_Types_passes_blocked;Outcomes_Blocks;Blocked by the opponent who was standing in the path
+Pass_Types_passes_completed;Outcomes_Cmp;Passes Completed. Includes live ball passes (including crosses) as well as corner kicks, throw-ins, free kicks and goal kicks.
+Pass_Types_passes_dead;Pass Types_Dead;Dead-ball Passes. Includes free kicks, corner kicks, kick offs, throw-ins and goal kicks
+Pass_Types_passes_free_kicks;Pass Types_FK;Passes attempted from free kicks
+Pass_Types_passes_live;Pass Types_Live;Live-ball Passes
+Pass_Types_passes_offsides;Outcomes_Off;Offsides
+Pass_Types_passes_switches;Pass Types_Sw;Passes that travel more than 40 yards of the width of the pitch
+Pass_Types_through_balls;Pass Types_TB;Completed pass sent between back defenders into open space
+Pass_Types_throw_ins;Pass Types_TI;Throw-ins Taken
+Passing_assisted_shots;KP;Passes that directly lead to a shot (assisted shots)
+Passing_assists;Ast;Assists
+Passing_crosses_into_penalty_area;CrsPA;Completed crosses into the 18-yard box. Not including set pieces
+Passing_pass_xa;Expected_xA;Expected Assists. The likelihood each completed pass becomes a goal assists given the pass type, phase of play, location and distance. Minimum 30 minutes played per squad game to qualify as a leader
+Passing_passes;Total_Att;Passes Attempted. Includes live ball passes (including crosses) as well as corner kicks, throw-ins, free kicks and goal kicks.
+Passing_passes_completed;Total_Cmp;Passes Completed. Includes live ball passes (including crosses) as well as corner kicks, throw-ins, free kicks and goal kicks.
+Passing_passes_completed_long;Long_Cmp;Passes Completed. Passes longer than 30 yards
+Passing_passes_completed_medium;Medium_Cmp;Passes Completed. Passes between 15 and 30 yards
+Passing_passes_completed_short;Short_Cmp;Passes Completed. Passes between 5 and 15 yards
+Passing_passes_into_final_third;1/3;Completed passes that enter the 1/3 of the pitch closest to the goal. Not including set pieces
+Passing_passes_into_penalty_area;PPA;Completed passes into the 18-yard box. Not including set pieces
+Passing_passes_long;Long_Att;Passes Attempted. Passes longer than 30 yards
+Passing_passes_medium;Medium_Att;Passes Attempted. Passes between 15 and 30 yards
+Passing_passes_pct;Total_Cmp%;Pass Completion Percentage. Minimum 30 minutes played per squad game to qualify as a leader. Includes live ball passes (including crosses) as well as corner kicks, throw-ins, free kicks and goal kicks.
+Passing_passes_pct_long;Long_Cmp%;Pass Completion Percentage. Passes longer than 30 yards. Minimum 30 minutes played per squad game to qualify as a leader
+Passing_passes_pct_medium;Medium_Cmp%;Pass Completion Percentage. Passes between 15 and 30 yards. Minimum 30 minutes played per squad game to qualify as a leader
+Passing_passes_pct_short;Short_Cmp%;Pass Completion Percentage. Passes between 5 and 15 yards. Minimum 30 minutes played per squad game to qualify as a leader
+Passing_passes_progressive_distance;Total_PgrDist;Progressive Distance. Total distance, in yards, that completed passes have traveled towards the opponent's goal. Passes away from opponent's goal are counted as zero progressive yards.
+Passing_passes_short;Short_Att;Passes Attempted. Passes between 5 and 15 yards
+Passing_passes_total_distance;Total_TotDist;Total distance, in yards, that completed passes have traveled in any direction
+Passing_progressive_passes;PgrP;Progressive Passes. Completed passes that move the ball towards the opponent's goal line at least 10 yards from its furthest point in the last six passes, or any completed pass into the penalty area. Excludes passes from the defending 40% of the pitch
+Passing_xg_assist;xAG;Expected Assisted Goals. xG which follows a pass that assists a shot
+Passing_xg_assist_net;Expected_A-xAG;Assists minus Expected Goals Assisted
+Playing_Time_games;Playing Time_MP;Matches Played by the player or squad
+Playing_Time_games_complete;Starts_Compl;Complete matches played
+Playing_Time_games_starts;Starts_Starts;Game or games started by player
+Playing_Time_games_subs;Subs_Subs;Games as sub. Game or games player did not start, so as a substitute
+Playing_Time_minutes;Playing Time_Min;Minutes
+Playing_Time_minutes_90s;Playing Time_90s;Minutes played divided by 90
+Playing_Time_minutes_pct;Playing Time_Min%;Percentage of team's total minutes in which player was on the pitch. Player minutes played divided by team total minutes played. Minimum 30 minutes played per squad game to qualify as a leader
+Playing_Time_minutes_per_game;Playing Time_Mn/MP;Minutes Per Match Played
+Playing_Time_minutes_per_start;Starts_Mn/Start;Minutes Per Match Started. Minimum 30 minutes played per squad game to qualify as a leader
+Playing_Time_minutes_per_sub;Subs_Mn/Sub;Minutes Per Substitution. Minimum 30 minutes played per squad game to qualify as a leader
+Playing_Time_on_goals_against;Team Success_onGA;Goals allowed by team while on pitch
+Playing_Time_on_goals_for;Team Success_onG;Goals scored by team while on pitch
+Playing_Time_on_xg_against;Team Success (xG)_onxGA;Expected goals allowed by team while on pitch. xG totals include penalty kicks, but do not include penalty shootouts (unless otherwise noted)
+Playing_Time_on_xg_for;Team Success (xG)_onxG;Expected goals by team while on pitch. xG totals include penalty kicks, but do not include penalty shootouts (unless otherwise noted).
+Playing_Time_plus_minus;Team Success_+/-;Plus/Minus. Goals scored minus goals allowed by the team while the player was on the pitch.
+Playing_Time_plus_minus_per90;Team Success_+/-90;Plus/Minus per 90 Minutes. Goals scored minus goals allowed by the team while the player was on the pitch per 90 minutes played. Minimum 30 minutes played per squad game to qualify as a leader
+Playing_Time_plus_minus_wowy;Team Success_On-Off;Net goals per 90 minutes by the team while the player was on the pitch minus net goals allowed per 90 minutes by the team while the player was off the pitch. Minimum 30 minutes played per squad game to qualify as a leader
+Playing_Time_points_per_game;Team Success_PPM;Points per Match. Average number of points earned by the team from matches in which the player appeared. Minimum 30 minutes played per squad game to qualify as a leader
+Playing_Time_unused_subs;Subs_unSub;Games as an unused substitute
+Playing_Time_xg_plus_minus;Team Success (xG)_xG+/-;xG Plus/Minus. Expected goals scored minus expected goals allowed by the team while the player was on the pitch. xG totals include penalty kicks, but do not include penalty shootouts (unless otherwise noted).
+Playing_Time_xg_plus_minus_per90;Team Success (xG)_xG+/-90;xG Plus/Minus per 90 Minutes. Expected goals scored minus expected goals allowed by the team while the player was on the pitch per 90 minutes played. xG totals include penalty kicks, but do not include penalty shootouts (unless otherwise noted). Minimum 30 minutes played per squad game to qualify as a leader
+Playing_Time_xg_plus_minus_wowy;Team Success (xG)_On-Off;xG Plus/Minus Net per 90 Minutes. Net expected goals per 90 minutes by the team while the player was on the pitch minus net expected goals per 90 minutes by the team while the player was off the pitch. Minimum 30 minutes played per squad game to qualify as a leader
+Possession_carries;Carries_Carries;Number of times the player controlled the ball with their feet
+Possession_carries_distance;Carries_TotDist;Total distance, in yards, a player moved the ball while controlling it with their feet, in any direction
+Possession_carries_into_final_third;Carries_1/3;Carries that enter the 1/3 of the pitch closest to the goal
+Possession_carries_into_penalty_area;Carries_CPA;Carries into the 18-yard box
+Possession_carries_progressive_distance;Carries_PgrDist;Carries that move the ball towards the opponent's goal line at least 10 yards from its furthest point in the last six passes, or any carry into the penalty area. Excludes carries which end in the defending 50% of the pitch
+Possession_dispossessed;Carries_Dis;Number of times a player loses control of the ball after being tackled by an opposing player. Does not include attempted take-ons
+Possession_miscontrols;Carries_Mis;Number of times a player failed when attempting to gain control of a ball
+Possession_passes_received;Receiving_Rec;Number of times a player successfully received a pass
+Possession_progressive_carries;Carries_PgrC;Carries that move the ball towards the opponent's goal line at least 10 yards from its furthest point in the last six passes, or any carry into the penalty area. Excludes carries which end in the defending 50% of the pitch
+Possession_progressive_passes_received;Receiving_PrgR;Progressive Passes Received. Completed passes that move the ball towards the opponent's goal line at least 10 yards from its furthest point in the last six passes, or any completed pass into the penalty area. Excludes passes from the defending 40% of the pitch
+Possession_take_ons;Take-Ons_Att;Number of attempts to take on defenders while dribbling
+Possession_take_ons_tackled;Take-Ons_Tkld;Number of times tackled by a defender during a take-on attempt
+Possession_take_ons_tackled_pct;Take-Ons_Tkld%;Percentage of time tackled by a defender during a take-on attempt. Minimum .5 take-ons per squad game to qualify as a leader
+Possession_take_ons_won;Take-Ons_Succ;Number of defenders taken on successfully, by dribbling past them. Unsuccessful take-ons include attempts where the dribbler retained possession but was unable to get past the defender
+Possession_take_ons_won_pct;Take-Ons_Succ%;Percentage of Take-Ons Completed Successfully. Unsuccessful take-ons include attempts where the dribbler retained possession but was unable to get past the defender. Minimum .5 take-ons per squad game to qualify as a leader
+Possession_touches;Touches_Touches;Number of times a player touched the ball. Note: Receiving a pass, then dribbling, then sending a pass counts as one touch
+Possession_touches_att_3rd;Touches_Att 3rd;Touches in attacking 1/3
+Possession_touches_att_pen_area;Touches_Att Pen;Touches in attacking penalty area
+Possession_touches_def_3rd;Touches_Def 3rd;Touches in defensive 1/3
+Possession_touches_def_pen_area;Touches_Def Pen;Touches in defensive penalty area
+Possession_touches_live_ball;Touches_Live;Live-ball touches. Does not include corner kicks, free kicks, throw-ins, kick-offs, goal kicks or penalty kicks
+Possession_touches_mid_3rd;Touches_Mid 3rd;Touches in middle 1/3
+Shooting_average_shot_distance;Standard_Dist;Average distance, in yards, from goal of all shots taken. Minimum .395 shots per squad game to qualify as a leader. Does not include penalty kicks
+Shooting_goals;Standard_Gls;Goals scored or allowed
+Shooting_goals_per_shot;Standard_G/Sh;Goals per shot. Minimum .395 shots per squad game to qualify as a leader
+Shooting_goals_per_shot_on_target;Standard_G/SoT;Goals per shot on target. Minimum .111 shots on target per squad game to qualify as a leader. Note: Shots on target do not include penalty kicks
+Shooting_npxg;Expected_npxG;Non-Penalty Expected Goals
+Shooting_npxg_net;Expected_np:G-xG;Non-Penalty Goals minus Non-Penalty Expected Goals. xG totals include penalty kicks, but do not include penalty shootouts (unless otherwise noted).
+Shooting_npxg_per_shot;Expected_npxG/Sh;Non-Penalty Expected Goals per shot. Minimum .395 shots per squad game to qualify as a leader
+Shooting_pens_att;Standard_PKatt;Penalty Kicks Attempted
+Shooting_pens_made;Standard_PK;Penalty Kicks Made
+Shooting_shots;Standard_Sh;Shots Total. Does not include penalty kicks
+Shooting_shots_free_kicks;Standard_FK;Shots from Free Kicks
+Shooting_shots_on_target;Standard_SoT;Shots on Target. Shots on target do not include penalty kicks
+Shooting_shots_on_target_pct;Standard_SoT%;Percentage of shots that are on target. Minimum .395 shots per squad game to qualify as a leader. Shots on target do not include penalty kicks
+Shooting_shots_on_target_per90;Standard_SoT/90;Shots on target per 90 minutes. Minimum 30 minutes played per squad game to qualify as a leader. Shots on target do not include penalty kicks
+Shooting_shots_per90;Standard_Sh/90;Shots total per 90 minutes. Minimum 30 minutes played per squad game to qualify as a leader
+Shooting_xg;Expected_xG;Expected Goals. xG totals include penalty kicks, but do not include penalty shootouts (unless otherwise noted).
+Shooting_xg_net;Expected_G-xG;Goals minus Expected Goals. xG totals include penalty kicks, but do not include penalty shootouts (unless otherwise noted).

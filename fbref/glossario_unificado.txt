@@ -1,0 +1,234 @@
+# ===============================================
+# GLOSSÁRIO UNIFICADO DE ESTATÍSTICAS - FBREF
+# ===============================================
+
+# -----------------------------------------------
+# --- GLOSSÁRIO: ADVANCED GOALKEEPING ---
+# -----------------------------------------------
+GA (Goals Against): Gols Sofridos. 
+PKA (Penalty Kicks Allowed): Gols de Pênalti Sofridos. 
+FK (Free Kick Goals Against): Gols de Falta Sofridos. 
+CK (Corner Kick Goals Against): Gols de Escanteio Sofridos. 
+OG (Own Goals Scored Against Goalkeeper): Gols Contra Marcados Contra o Goleiro. 
+PSxG (Post-Shot Expected Goals): Gols Esperados Pós-Chute. É a expectativa de gols baseada na probabilidade de o goleiro defender o chute. 
+PSxG/SoT (Post-Shot Expected Goals per Shot on Target): Gols Esperados Pós-Chute por Chute no Gol. Números mais altos indicam que os chutes enfrentados são mais difíceis de defender. 
+PSxG+/- (PSxG-GA): Gols Esperados Pós-Chute menos Gols Sofridos. Números positivos sugerem sorte ou habilidade acima da média para defender chutes. 
+/90 (PSxG-GA/90): Gols Esperados Pós-Chute menos Gols Sofridos por 90 minutos. 
+Cmp (Passes Completed (Launched)): Passes completos com mais de 40 jardas. 
+Att (Passes Attempted (Launched)): Passes tentados com mais de 40 jardas. 
+Cmp% (Pass Completion Percentage (Launched)): Porcentagem de passes completos com mais de 40 jardas. 
+Att (GK) (Passes Attempted (GK)): Passes tentados pelo goleiro (não inclui tiros de meta). 
+Thr (Throws Attempted): Lançamentos manuais tentados. 
+Launch% (Launch %): Porcentagem de passes que foram lançamentos longos (mais de 40 jardas). 
+AvgLen (Average Pass Length): Distância média dos passes, em jardas. 
+Att (Goal Kicks): Tiros de meta tentados. 
+Launch% (Goal Kicks) (Launch% (Goal Kicks)): Porcentagem de tiros de meta que foram lançamentos longos. 
+AvgLen (Avg. Length of Goal Kicks): Distância média dos tiros de meta, em jardas. 
+Opp (Crosses Faced): Cruzamentos tentados pelo adversário na área de pênalti. 
+Stp (Crosses Stopped): Cruzamentos na área que foram parados com sucesso pelo goleiro. 
+Stp% (Crosses Stopped %): Porcentagem de cruzamentos na área que foram parados pelo goleiro. 
+#OPA (Def. Actions Outside Pen. Area): Número de ações defensivas fora da área de pênalti. 
+#OPA/90 (Defensive actions outside of penalty area per 90 minutes): Ações defensivas fora da área de pênalti por 90 minutos. 
+AvgDist (Avg. Distance of Def. Actions): Distância média do gol (em jardas) de todas as ações defensivas. 
+
+# -----------------------------------------------
+# --- GLOSSÁRIO: DEFENSIVE ACTIONS ---
+# -----------------------------------------------
+Tkl (Tackles): Número de jogadores desarmados. 
+TklW (Tackles Won): Desarmes em que o time do defensor recuperou a posse de bola. 
+Def 3rd (Tackles (Def 3rd)): Desarmes no terço defensivo do campo. 
+Mid 3rd (Tackles (Mid 3rd)): Desarmes no terço central do campo. 
+Att 3rd (Tackles (Att 3rd)): Desarmes no terço de ataque do campo. 
+Tkl (Dribblers Tackled): Número de dribladores desarmados. 
+Att (Dribbles Challenged): Número de desafios a dribladores (sucedidos + fracassados). 
+Tkl% (% of Dribblers Tackled): Porcentagem de dribladores desarmados. [cite: 118]
+Lost (Challenges Lost): Número de tentativas sem sucesso de desafiar um driblador. [cite: 118]
+Blocks (Blocks): Número de vezes que bloqueou a bola ficando em seu caminho. 
+Sh (Shots Blocked): Número de chutes bloqueados. 
+Pass (Passes Blocked): Número de passes bloqueados. 
+Int (Interceptions): Interceptações. 
+Tkl+Int (Tkl+Int): Número de jogadores desarmados mais o número de interceptações. 
+Clr (Clearances): Alívios/Cortes. 
+Err (Errors): Erros que levaram a um chute do adversário. 
+
+# -----------------------------------------------
+# --- GLOSSÁRIO: GOAL AND SHOT CREATION ---
+# -----------------------------------------------
+SCA (Shot-Creating Actions): Ações que Criam Chutes. As duas ações ofensivas que levam diretamente a um chute (passes, dribles, sofrer faltas). 
+SCA90 (Shot-Creating Actions/90): Ações que Criam Chutes por 90 minutos. 
+PassLive (SCA (Live-ball Pass)): Passes de bola rolando completos que levam a uma tentativa de chute. 
+PassDead (SCA (Dead-ball Pass)): Passes de bola parada completos que levam a uma tentativa de chute (faltas, escanteios, etc.). 
+TO (SCA (Take-On)): Dribles bem-sucedidos que levam a uma tentativa de chute. 
+Sh (SCA (Shot)): Chutes que levam a outra tentativa de chute. 
+Fld (SCA (Fouls Drawn)): Faltas sofridas que levam a uma tentativa de chute. 
+Def (SCA (Defensive Action)): Ações defensivas que levam a uma tentativa de chute. 
+GCA (Goal-Creating Actions): Ações que Criam Gols. As duas ações ofensivas que levam diretamente a um gol. 
+GCA90 (Goal-Creating Actions/90): Ações que Criam Gols por 90 minutos. 
+PassLive (GCA (Live-ball Pass)): Passes de bola rolando completos que levam a um gol. 
+PassDead (GCA (Dead-ball Pass)): Passes de bola parada completos que levam a um gol. 
+TO (GCA (Take-On)): Dribles bem-sucedidos que levam a um gol. 
+Sh (GCA (Shot)): Chutes que levam a outro chute que resulta em gol. 
+Fld (GCA (Fouls Drawn)): Faltas sofridas que levam a um gol. 
+Def (GCA (Defensive Action)): Ações defensivas que levam a um gol. 
+
+# -----------------------------------------------
+# --- GLOSSÁRIO: GOALKEEPING ---
+# -----------------------------------------------
+MP (Matches Played): Partidas Jogadas. 
+Starts (Game or games started by player): Partidas como titular. 
+Min (Minutes): Minutos jogados. 
+GA (Goals Against): Gols Sofridos. 
+GA90 (Goals Against/90): Gols sofridos por 90 minutos. 
+SoTA (Shots on Target Against): Chutes no Gol Sofridos. 
+Save% (Save Percentage): Porcentagem de Defesas. (Chutes no Gol Sofridos - Gols Sofridos) / Chutes no Gol Sofridos. 
+W (Wins): Vitórias. 
+D (Draws): Empates. 
+L (Losses): Derrotas. 
+CS (Clean Sheets): Jogos sem Sofrer Gol. 
+CS% (Clean Sheet Percentage): Porcentagem de jogos sem sofrer gol. 
+PKatt (Penalty Kicks Attempted): Pênaltis Cobrados Contra. 
+PKA (Penalty Kicks Allowed): Gols de Pênalti Sofridos. 
+PKsv (Penalty Kicks Saved): Pênaltis Defendidos. 
+PKm (Penalty Kicks Missed): Pênaltis perdidos pelo adversário. 
+Save% (Save% (Penalty Kicks)): Porcentagem de defesas de pênalti. Gols de Pênalti / Tentativas de Pênalti. 
+
+# -----------------------------------------------
+# --- GLOSSÁRIO: MISCELLANEOUS ---
+# -----------------------------------------------
+CrdY (Yellow Cards): Cartões Amarelos. 
+CrdR (Red Cards): Cartões Vermelhos. 
+2CrdY (Second Yellow Card): Segundo Cartão Amarelo. 
+Fls (Fouls Committed): Faltas Cometidas. 
+Fld (Fouls Drawn): Faltas Sofridas. 
+Off (Offsides): Impedimentos. 
+Crs (Crosses): Cruzamentos. 
+Int (Interceptions): Interceptações. 
+TklW (Tackles Won): Desarmes Vencidos. 
+PKwon (Penalty Kicks Won): Pênaltis Ganhos (sofridos). 
+PKcon (Penalty Kicks Conceded): Pênaltis Cometidos. 
+OG (Own Goals): Gols Contra. 
+Recov (Ball Recoveries): Bolas recuperadas. 
+Won (Aerials Won): Duelos aéreos ganhos. 
+Lost (Aerials Lost): Duelos aéreos perdidos. 
+Won% (% of Aerials Won): Porcentagem de duelos aéreos ganhos. 
+
+# -----------------------------------------------
+# --- GLOSSÁRIO: PASSING ---
+# -----------------------------------------------
+Cmp (Passes Completed): Passes Completos. 
+Att (Passes Attempted): Passes Tentados. 
+Cmp% (Pass Completion %): Porcentagem de Passes Completos. 
+TotDist (Total Passing Distance): Distância total (em jardas) que os passes completados viajaram. 
+PrgDist (Progressive Passing Distance): Distância progressiva (em jardas) que os passes completados viajaram em direção ao gol adversário. 
+Cmp (Short) (Passes Completed (Short)): Passes curtos (5-15 jardas) completos. 
+Att (Short) (Passes Attempted (Short)): Passes curtos tentados. 
+Cmp% (Short) (Pass Completion % (Short)): Porcentagem de passes curtos completos. 
+Cmp (Medium) (Passes Completed (Medium)): Passes médios (15-30 jardas) completos. 
+Att (Medium) (Passes Attempted (Medium)): Passes médios tentados. 
+Cmp% (Medium) (Pass Completion % (Medium)): Porcentagem de passes médios completos. 
+Cmp (Long) (Passes Completed (Long)): Passes longos (>30 jardas) completos. 
+Att (Long) (Passes Attempted): Passes longos tentados. 
+Cmp% (Long) (Pass Completion % (Long)): Porcentagem de passes longos completos. 
+Ast (Assists): Assistências. 
+xAG (xAG: Exp. Assisted Goals): Gols Esperados de Assistência. O xG que se segue a um passe que assiste um chute. 
+xA (xA: Expected Assists): Assistências Esperadas. A probabilidade de cada passe completo se tornar uma assistência para gol. 
+A-xAG (Assists - xAG): Assistências menos Gols Esperados de Assistência. 
+KP (Key Passes): Passes Chave. Passes que levam diretamente a um chute. 
+1/3 (Passes into Final Third): Passes para o Terço Final. Passes completos que entram no terço do campo mais próximo do gol. 
+PPA (Passes into Penalty Area): Passes para a Área de Pênalti. 
+CrsPA (Crosses into Penalty Area): Cruzamentos para a Área de Pênalti. 
+PrgP (Progressive Passes): Passes Progressivos. Passes completos que movem a bola pelo menos 10 jardas em direção à linha de gol adversária. 
+
+# -----------------------------------------------
+# --- GLOSSÁRIO: PASS TYPES ---
+# -----------------------------------------------
+Att (Passes Attempted): Passes Tentados. 
+Live (Live-ball Passes): Passes com bola rolando. 
+Dead (Dead-ball Passes): Passes com bola parada (faltas, escanteios, etc.). 
+FK (Passes from Free Kicks): Passes tentados de cobranças de falta. 
+TB (Through Balls): Bolas enfiadas. Passe completo enviado entre os defensores para um espaço aberto. 
+Sw (Switches): Viradas de Jogo. Passes que viajam mais de 40 jardas na largura do campo. 
+Crs (Crosses): Cruzamentos. 
+TI (Throw-ins Taken): Laterais Cobrados. 
+CK (Corner Kicks): Escanteios. 
+In (Inswinging Corner Kicks): Escanteios fechados (com curva para dentro do gol). 
+Out (Outswinging Corner Kicks): Escanteios abertos (com curva para fora do gol). 
+Str (Straight Corner Kicks): Escanteios retos. 
+Cmp (Passes Completed): Passes Completos. 
+Off (Passes Offside): Passes que resultaram em impedimento. 
+Blocks (Passes Blocked): Passes bloqueados por um oponente no caminho. 
+
+# -----------------------------------------------
+# --- GLOSSÁRIO: PLAYING TIME ---
+# -----------------------------------------------
+MP (Matches Played): Partidas Jogadas. 
+Min (Minutes): Minutos jogados. 
+Mn/MP (Minutes Per Match Played): Média de minutos por partida jogada. 
+Min% (Percentage of Squad Minutes Played): Porcentagem dos minutos do time que o jogador esteve em campo. 
+90s (90s Played): "Partidas de 90 minutos" jogadas (minutos totais / 90). 
+Starts (Game or games started by player): Partidas como titular. 
+Mn/Start (Minutes Per Match Started): Média de minutos por partida como titular. 
+Compl (Complete Matches Played): Partidas completas jogadas. 
+Subs (Substitute Appearances): Entradas como substituto. 
+Mn/Sub (Minutes Per Substitution): Média de minutos por partida em que entrou como substituto. 
+unSub (Matches as Unused Sub): Partidas como substituto não utilizado. 
+PPM (Points per Match): Média de pontos conquistados pelo time nas partidas em que o jogador atuou. 
+onG (Goals Scored (on pitch)): Gols marcados pelo time enquanto o jogador estava em campo. 
+onGA (Goals Allowed (on pitch)): Gols sofridos pelo time enquanto o jogador estava em campo. 
++/- (Plus/Minus): Saldo de gols do time com o jogador em campo (gols marcados - sofridos). 
++/-90 (Plus/Minus/90): Saldo de gols por 90 minutos. 
+On-Off (Plus/Minus Net per 90 Minutes): Saldo líquido de gols por 90 minutos (saldo com o jogador em campo menos o saldo com ele fora de campo). 
+onxG (xG (on pitch)): Gols esperados (xG) pelo time com o jogador em campo. 
+onxGA (xGA (on pitch)): Gols esperados sofridos (xGA) pelo time com o jogador em campo. 
+xG+/- (xG Plus/Minus): Saldo de gols esperados (xG marcados - xG sofridos) com o jogador em campo. 
+xG+/-90 (xG Plus/Minus/90): Saldo de gols esperados por 90 minutos. 
+On-Off (xG On-Off): Saldo líquido de xG por 90 minutos. 
+
+# -----------------------------------------------
+# --- GLOSSÁRIO: POSSESSION ---
+# -----------------------------------------------
+Touches (Touches): Toques na bola. 
+Def Pen (Touches (Def Pen)): Toques na área de pênalti defensiva. 
+Def 3rd (Touches (Def 3rd)): Toques no terço defensivo. 
+Mid 3rd (Touches (Mid 3rd)): Toques no terço do meio-campo. 
+Att 3rd (Touches (Att 3rd)): Toques no terço de ataque. 
+Att Pen (Touches (Att Pen)): Toques na área de pênalti de ataque. 
+Live (Touches (Live-Ball)): Toques com bola rolando. 
+Att (Take-Ons Attempted): Tentativas de drible para passar por um defensor. 
+Succ (Successful Take-Ons): Dribles bem-sucedidos. 
+Succ% (Successful Take-On %): Porcentagem de dribles bem-sucedidos. 
+Tkld (Times Tackled During Take-On): Vezes em que foi desarmado durante uma tentativa de drible. 
+Tkld% (Tackled During Take-On Percentage): Porcentagem de vezes em que foi desarmado ao tentar driblar. 
+Carries (Carries): Número de vezes que o jogador conduziu a bola com os pés. 
+TotDist (Total Carrying Distance): Distância total (em jardas) que um jogador moveu a bola com os pés. 
+PrgDist (Progressive Carrying Distance): Distância progressiva que um jogador moveu a bola em direção ao gol adversário. 
+PrgC (Progressive Carries): Conduções progressivas. Conduções que movem a bola significativamente em direção ao gol adversário. 
+1/3 (Carries into Final Third): Conduções para o terço final. 
+CPA (Carries into Penalty Area): Conduções para a área de pênalti. 
+Mis (Miscontrols): Erros de domínio de bola. 
+Dis (Dispossessed): Perdas de posse de bola após ser desarmado. 
+Rec (Passes Received): Passes recebidos com sucesso. 
+PrgR (Progressive Passes Rec): Passes progressivos recebidos. 
+
+# -----------------------------------------------
+# --- GLOSSÁRIO: SHOOTING ---
+# -----------------------------------------------
+Gls (Goals): Gols. 
+Sh (Shots Total): Total de Chutes (não inclui pênaltis). 
+SoT (Shots on Target): Chutes no Gol (não inclui pênaltis). 
+SoT% (Shots on Target %): Porcentagem de chutes que foram no gol. 
+Sh/90 (Shots Total/90): Chutes totais por 90 minutos. 
+SoT/90 (Shots on target/90): Chutes no gol por 90 minutos. 
+G/Sh (Goals/Shot): Gols por chute. 
+G/SoT (Goals/Shot on Target): Gols por chute no gol. 
+Dist (Average Shot Distance): Distância média do chute em relação ao gol, em jardas. 
+FK (Shots from Free Kicks): Chutes de cobranças de falta. 
+PK (Penalty Kicks Made): Pênaltis Convertidos. 
+PKatt (Penalty Kicks Attempted): Pênaltis Tentados. 
+xG (xG: Expected Goals): Gols Esperados. 
+npxG (npxG: Non-Penalty xG): Gols Esperados sem Pênaltis. 
+npxG/Sh (npxG/Shot): Gols Esperados sem Pênaltis por chute. 
+G-xG (Goals - xG): Gols menos Gols Esperados. 
+np:G-xG (Non-Penalty Goals - npxG): Gols (sem pênaltis) menos Gols Esperados (sem pênaltis). 
+
+# --- FIM DO GLOSSÁRIO ---
